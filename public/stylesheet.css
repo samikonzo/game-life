@@ -1,0 +1,75 @@
+.GameOfLife_wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	position: relative;
+	max-width: 500px;
+	margin: auto;
+}
+
+.GameOfLife_field table{
+	border-collapse: collapse;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.GameOfLife_cell{
+	width: 15px;
+	height: 15px;
+	border: 1px dashed grey;
+
+	
+
+}
+
+.GameOfLife_cell--live{
+	background: lightgreen;
+	border:  1px solid;
+	opacity: 1;
+	transition: 0s;
+
+}
+
+.GameOfLife_cell--die{
+	background: white;
+	opacity: 0;
+	transition: .5s;
+}
+
+.GameOfLife_cell--pause{
+	background: lightblue;
+}
+
+.GameOfLife_cell--die.GameOfLife_cell--pause{
+	transition: 0s 0s;
+}
+
+
+.GameOfLife_control{
+	margin-top: 20px;
+	flex:  0 0 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.GameOfLife_playBtn{
+	border: 1px solid;
+	outline: none;
+	width:  100%;
+	cursor: pointer;
+}
+.GameOfLife_playBtn--active{
+	background: lightgreen;
+}
+
+.GameOfLife_pauseBtn{
+	border: 1px solid;
+	outline: none;
+	width:  100%;
+	cursor: pointer;
+}
+.GameOfLife_pauseBtn--active{
+	background: greenyellow;
+}
